@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MyBluetoothTerminal</string>
+
+    <string name="unabletoconnect">Unable to connect device</string>
+    <string name="connectionlost">Device connection was lost</string>
+
+    <string-array name="elmcomm_states" translatable="false">
+        <item>@string/UNDEFINED</item>
+        <item>@string/INITIALIZING</item>
+        <item>@string/INITIALIZED</item>
+        <item>@string/ECU_DETECT</item>
+        <item>@string/ECU_DETECTED</item>
+        <item>@string/CONNECTING</item>
+        <item>@string/CONNECTED</item>
+        <item>@string/NODATA</item>
+        <item>@string/STOPPED</item>
+        <item>@string/DISCONNECTED</item>
+        <item>@string/BUSERROR</item>
+        <item>@string/DATAERROR</item>
+        <item>@string/RXERROR</item>
+        <item>@string/ERROR</item>
+    </string-array>
+
+    <!-- ELM communication states -->
+    <string name="UNDEFINED">Undefined</string>
+    <string name="INITIALIZING">Initializing…</string>
+    <string name="INITIALIZED">Initialized</string>
+    <string name="ECU_DETECT">ECU detect…</string>
+    <string name="ECU_DETECTED">ECU detected</string>
+    <string name="CONNECTING">Connecting…</string>
+    <string name="CONNECTED">Connected</string>
+    <string name="NODATA">No data</string>
+    <string name="STOPPED">Stopped</string>
+    <string name="DISCONNECTED">Disconnected</string>
+    <string name="BUSERROR">BUS error</string>
+    <string name="DATAERROR">DATA error</string>
+    <string name="RXERROR">RX error</string>
+    <string name="ERROR">Error</string>
+
+
+</resources>

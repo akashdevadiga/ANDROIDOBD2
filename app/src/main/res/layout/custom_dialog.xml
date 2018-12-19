@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="19dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/textViewtvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Please Wait"
+        android:textStyle="bold"
+        android:textColor="#123456"
+        android:textSize="19sp" />
+
+
+
+    <TextView
+        android:id="@+id/textViewtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewtvv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Validation in progess..."
+        android:textColor="#123456"
+        android:textSize="14sp" />
+
+</RelativeLayout>

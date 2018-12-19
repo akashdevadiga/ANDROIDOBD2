@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:id="@+id/blutoothrr1">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#123456"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:text="Bluetooth Control"
+                    android:letterSpacing="0.2"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/busName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical|center"
+        android:minLines="2"
+        android:text="no data"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/busName"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center"
+        android:text="Bluetooth Controls"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="533dp"
+        android:layout_marginBottom="-70dp"
+        android:layout_marginTop="160dp"
+        android:layout_weight="1.8"
+        android:backgroundTintMode="screen"
+        android:elevation="10dp"
+        app:cardCornerRadius="70dp"
+        app:contentPaddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:paddingStart="45dp">
+
+                    <TextView
+                        android:id="@+id/btonoffstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bluetooth OFF"
+                        android:textColor="#123456"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center|end"
+                    android:paddingEnd="25dp">
+
+                    <Switch
+                        android:id="@+id/onff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:trackTint="#123456" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.45">
+
+                <TextView
+                    android:id="@+id/textava"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cardview_border"
+                    android:gravity="center"
+                    android:letterSpacing="0.2"
+                    android:paddingBottom="2.5dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="2.5dp"
+                    android:text="Available Devices"
+                    android:textColor="#123456"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/btlistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/textava"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:choiceMode="singleChoice"
+                    android:listSelector="#2fe958"
+                    android:padding="10dp">
+
+                </ListView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:padding="7dp">
+
+                <TextView
+                    android:id="@+id/selectedDevices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/cardview_border"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:padding="5dp"
+                    android:text="Selected Device is: none"
+                    android:textColor="#123456"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/generateCardBut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/selectedDevices"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/cardview_border"
+                    android:drawablePadding="19dp"
+                    android:elevation="5dp"
+                    android:paddingStart="23dp"
+                    android:text="Generate Card"
+                    android:textAlignment="textStart"
+                    android:textColor="#123456"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
